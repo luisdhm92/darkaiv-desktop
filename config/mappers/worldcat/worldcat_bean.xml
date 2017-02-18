@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+    <!-- Definition for org.uclv.darkaiv.organizer.WCDocumentFactory -->
+    <bean id="worldcat" class="org.uclv.darkaiv.organizer.WCDocumentFactory">
+
+        <!-- results in a setMetadataMapperDocument(java.util.Map) call -->
+        <property name="metadataMapperDocument">
+            <map>
+
+                <entry key="publisher" value="publisher"/>
+                <entry key="title" value="title"/>
+                <entry key="lang" value="idiom"/>
+                <entry key="ed" value="edition"/>                           
+
+
+            </map>
+        </property>
+
+        <!-- results in a setMetadataMapperIdentifier(java.util.Map) call -->
+        <property name="metadataMapperIdentifier">
+            <map>
+
+
+            </map>
+        </property>
+
+    </bean>
+</beans>

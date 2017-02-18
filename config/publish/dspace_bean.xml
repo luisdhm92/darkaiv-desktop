@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Definition for org.uclv.darkaiv.publisher.DSPACE -->
+    <bean id="dspace" class="org.uclv.darkaiv.publisher.DSPACE">
+
+        
+        <property name="itemFactory" ref="itemFactory">
+            
+        </property>
+
+    </bean>
+    
+    <!-- Definition for org.uclv.darkaiv.dspace.ItemFactory -->
+    <bean id="itemFactory" class="org.uclv.darkaiv.dspace.ItemFactory">
+
+        <!-- results in a setItemMapper(java.util.Map) call -->
+        <property name="itemMapper">
+            <map>
+                
+                <entry key="title" value="dc.title"/>
+                <entry key="abstract" value="dc.description.abstract"/>
+                <entry key="publisher" value="dc.publisher"/>
+                <entry key="year" value="dc.date"/>
+                <entry key="type" value="dc.type"/>
+                <entry key="mime_type" value="dc.format"/>
+                <entry key="author" value="dc.creator"/>
+                
+            </map>
+        </property>
+
+    </bean>
+</beans>
