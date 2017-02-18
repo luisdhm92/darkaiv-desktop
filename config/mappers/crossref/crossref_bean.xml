@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+    <!-- Definition for org.uclv.darkaiv.organizer.CRDocumentFactory -->
+    <bean id="crossref" class="org.uclv.darkaiv.organizer.CRDocumentFactory">
+
+        <!-- results in a setMetadataMapperDocument(java.util.Map) call -->
+        <property name="metadataMapperDocument">
+            <map>
+
+                <entry key="publisher" value="publisher"/>
+                <entry key="title" value="title"/>
+                <entry key="issue" value="issue"/>
+                <entry key="page" value="pages"/>
+                <entry key="type" value="type"/>
+                <entry key="volume" value="volume"/>
+
+
+            </map>
+        </property>
+
+        <!-- results in a setMetadataMapperIdentifier(java.util.Map) call -->
+        <property name="metadataMapperIdentifier">
+            <map>
+
+                <entry key="doi" value="doi"/>
+                <entry key="issn" value="issn"/>
+
+            </map>
+        </property>
+
+    </bean>
+</beans>
