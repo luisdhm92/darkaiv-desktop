@@ -672,3 +672,38 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+
+====================================================================
+== Licenses for externall libraries included in this assembly    ==
+====================================================================
+
+tika
+active-jdbc
+h2
+junit
+jetty
+jersey
+spring
+
+=========================================================================
+== Tika is licensed under the Apache License Version 2.0              ==
+=========================================================================
+=========================================================================
+== Active-JDBC is licensed under the Apache License Version 2.0       ==
+=========================================================================
+=========================================================================
+== H2 is licensed under the Mozilla Public License Version 2.0        ==
+=========================================================================
+=========================================================================
+== JUnit is licensed under the Eclipse Public License 1.0             ==
+=========================================================================
+=========================================================================
+== Jetty is licensed under the Apache License Version 2.0             ==
+=========================================================================
+=========================================================================
+== Jersey is licensed under the COMMON DEVELOPMENT AND 
+   DISTRIBUTION LICENSE (CDDL - Version 1.1)                          ==
+=========================================================================
+=========================================================================
+== Spring is licensed under the Apache License Version 2.0            ==
+=========================================================================
